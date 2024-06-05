@@ -14,13 +14,13 @@ const LiveProjects = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
   };
   useEffect(() => {
     AOS.init();
   })
   return (
-    <div style={{ width: '100%', minHeight: 350}} >
+    <div style={{ width: '100%', minHeight: 350, height: '100%'}} >
       <Slider {...settings}>
       {ProjectData && 
         ProjectData.map((project, index) => {

@@ -16,7 +16,7 @@ const MainProjects = () => {
   })
 
   return (
-    <section className='Services'>
+    <section className='Projects'>
       <div className="projects-head">
         <h1 data-aos="zoom-out-up">Projects({ProjectData&&ProjectData.length})</h1>
         <div className="summary">
@@ -41,9 +41,9 @@ const MainProjects = () => {
       <div className="content-section">
 
         <div className="displayavatar">
-            <img src={images.cloudeservices} alt="" data-aos="zoom-out-up"/>
+            <img src={images.cloudeservices} alt=""/>
         </div>
-        <LiveProjects />
+        <div class="displayprojects"><LiveProjects /></div>
       </div>
     </section>
   )
