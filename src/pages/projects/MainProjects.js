@@ -39,7 +39,6 @@ const MainProjects = () => {
         </div>
       </div>
       <div className="content-section">
-
         <div className="displayavatar">
             <img src={images.cloudeservices} alt=""/>
         </div>

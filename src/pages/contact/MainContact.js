@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import GetInTouch from './components/GetInTouch'
-import { images } from '../../constants/AssetsFile'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
@@ -9,7 +8,7 @@ const MainContact = () => {
     AOS.init();
 })
   return (
-    <section className='Services'>
+    <section className='ContactPage'>
     <div className="projects-head">
       <h1 data-aos="zoom-out-up">Contacts (Let's Talk)</h1>
       <div className="summary">
@@ -31,11 +30,8 @@ const MainContact = () => {
           </div>
       </div>
     </div>
-    <div className="content-section">
+    <div className="ContactDisplay">
       <GetInTouch />
-      <div className="displayavatar">
-          <img src={images.contactme} alt="" />
-      </div>
     </div>
   </section>
   )
